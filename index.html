@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+  <title>Library project</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo"><h2>Library</h2></div>
+        <div class="btnModalActive">
+          <button type="button" class="btn">Add new book</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="tags-container">
+        <h1>All Books</h1>
+        <p>Tags</p>
+        <div class="tags">
+          <button type="button">read on</button>
+          <button type="button">unread</button>
+          <button type="button">All</button>
+        </div>
+      </div>
+      <div class="container-card">
+        <div class="card">
+          <div class="cover"><img src="" alt="nameCover"/></div>
+          <div class="dataBook">
+            <h2>name Book</h2>
+            <h3>name author book</h3>
+            <p>numeber pages</p>
+            <div class="botones">
+              <button type="button">Reading</button>
+              <button type="button">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal">
+      <form action="">
+        <div class="camposDeTexto">
+          <label for="name">Name*</label>
+          <input type="text" name="name" class="inputs"  placeholder="50 años de soledad...">
+        </div>
+        <div class="camposDeTexto">
+          <label for="">Author*</label>
+          <input type="text" name="Author" class="inputs"  placeholder="Gabril Garcia Marquez...">
+        </div>
+        <div class="camposDeTexto">
+          <label for="img">Book cover*</label>
+          <input type="url" name="img" class="inputs" 
+            placeholder="https://www.portada_cien_anos_de_soledad_0...">
+        </div>
+        <div class="camposDeTexto">
+          <label for="pages-number">Number of pages*</label>
+          <input type="number" name="pages-number" class="inputs" 
+            placeholder="How many pages does the book have?">
+        </div>
+        <div class="camposDeTexto">
+          <label for="reading">Reading</label>
+          <input type="checkbox" name="reading" class="inputs">
+        </div>
+        <div class="botones">
+          <button type="submit" class="btnSubmit">Submit</button>
+          <button type="button" class="btn">Cancelar</button>
+        </div>
+      </form>
+    </div>
+    <footer>Developed by WilDev</footer>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
