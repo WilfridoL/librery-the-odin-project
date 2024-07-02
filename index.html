@@ -9,7 +9,7 @@
 
 <body>
   <div class="container">
-    <header>
+    <!-- <header>
       <nav>
         <div class="logo"><h2>Library</h2></div>
         <div class="btnModalActive">
@@ -41,40 +41,40 @@
           </div>
         </div>
       </div>
-    </main>
+    </main> -->
     <div class="modal">
       <form action="">
         <div class="camposDeTexto">
           <label for="name">Name*</label>
-          <input type="text" name="name" class="inputs"  placeholder="50 años de soledad...">
+          <input type="text" name="name" class="inputs"  placeholder="50 años de soledad..." data-name>
         </div>
         <div class="camposDeTexto">
           <label for="">Author*</label>
-          <input type="text" name="Author" class="inputs"  placeholder="Gabril Garcia Marquez...">
+          <input type="text" name="author" class="inputs"  placeholder="Gabriel Garcia Marquez..." data-author>
         </div>
         <div class="camposDeTexto">
           <label for="img">Book cover*</label>
           <input type="url" name="img" class="inputs" 
-            placeholder="https://www.portada_cien_anos_de_soledad_0...">
+            placeholder="https://www.portada_cien_anos_de_soledad_0..." data-img>
         </div>
         <div class="camposDeTexto">
           <label for="pages-number">Number of pages*</label>
           <input type="number" name="pages-number" class="inputs" 
-            placeholder="How many pages does the book have?">
+            placeholder="How many pages does the book have?" data-pages>
         </div>
         <div class="camposDeTexto">
           <label for="reading">Reading</label>
-          <input type="checkbox" name="reading" class="inputs">
+          <input type="checkbox" name="reading" class="inputs" data-read>
         </div>
         <div class="botones">
-          <button type="submit" class="btnSubmit">Submit</button>
+          <button type="submit" class="btnSubmit" data-submit>Submit</button>
           <button type="button" class="btn">Cancelar</button>
         </div>
       </form>
     </div>
-    <footer>Developed by WilDev</footer>
+    <!-- <footer>Developed by WilDev</footer> -->
   </div>
-  <script type="module" src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
