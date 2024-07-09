@@ -5,15 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
   <title>Library project</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
-    <!-- <header>
+    <header>
       <nav>
-        <div class="logo"><h2>Library</h2></div>
+        <div class="logo">
+          <h2>Library</h2>
+        </div>
         <div class="btnModalActive">
-          <button type="button" class="btn">Add new book</button>
+          <button type="button" class="btn"><i class="fa-solid fa-plus"></i> Add book</button>
         </div>
       </nav>
     </header>
@@ -22,59 +31,47 @@
         <h1>All Books</h1>
         <p>Tags</p>
         <div class="tags">
-          <button type="button">read on</button>
+          <button type="button" class="active">All</button>
           <button type="button">unread</button>
-          <button type="button">All</button>
+          <button type="button">read on</button>
         </div>
       </div>
-      <div class="container-card">
-        <div class="card">
-          <div class="cover"><img src="" alt="nameCover"/></div>
-          <div class="dataBook">
-            <h2>name Book</h2>
-            <h3>name author book</h3>
-            <p>numeber pages</p>
-            <div class="botones">
-              <button type="button">Reading</button>
-              <button type="button">Delete</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main> -->
+      <div class="container-card" data-card></div>
+    </main>
     <div class="modal">
-      <form action="">
-        <div class="camposDeTexto">
+      <form action="" data-form>
+        <!-- <div class="camposDeTexto">
           <label for="name">Name*</label>
-          <input type="text" name="name" class="inputs"  placeholder="50 años de soledad..." data-name>
+          <input type="text" name="name" class="inputs" placeholder="50 años de soledad..." data-name>
         </div>
         <div class="camposDeTexto">
           <label for="">Author*</label>
-          <input type="text" name="author" class="inputs"  placeholder="Gabriel Garcia Marquez..." data-author>
+          <input type="text" name="author" class="inputs" placeholder="Gabriel Garcia Marquez..." data-author>
         </div>
         <div class="camposDeTexto">
           <label for="img">Book cover*</label>
-          <input type="url" name="img" class="inputs" 
-            placeholder="https://www.portada_cien_anos_de_soledad_0..." data-img>
+          <input type="text" name="img" class="inputs" placeholder="https://www.portada_cien_anos_de_soledad_0..."
+            data-img>
         </div>
         <div class="camposDeTexto">
           <label for="pages-number">Number of pages*</label>
-          <input type="number" name="pages-number" class="inputs" 
-            placeholder="How many pages does the book have?" data-pages>
+          <input type="number" name="pages-number" class="inputs" placeholder="How many pages does the book have?"
+            data-pages>
         </div>
         <div class="camposDeTexto">
           <label for="reading">Reading</label>
           <input type="checkbox" name="reading" class="inputs" data-read>
         </div>
         <div class="botones">
-          <button type="submit" class="btnSubmit" data-submit>Submit</button>
+          <button type="submit" class="btnSubmit">Submit</button>
           <button type="button" class="btn">Cancelar</button>
-        </div>
+        </div> -->
       </form>
     </div>
-    <!-- <footer>Developed by WilDev</footer> -->
+    <footer>Developed by WilDev</footer>
   </div>
-  <script src="main.js"></script>
+  <script type="module" src="./main.js"></script>
+  <script src="https://kit.fontawesome.com/bc3dfab8e3.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

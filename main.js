@@ -1,3 +1,7 @@
+import { ConstructorBook } from "./js/constructor.js";
+import { librery } from "./js/data.js";
+import { printCard } from "./js/createCard.js";
+
 const inputs = {
   "name": document.querySelector('[data-name]'),
   "author": document.querySelector('[data-author]'),
@@ -5,31 +9,11 @@ const inputs = {
   "pages": document.querySelector('[data-pages]'),
   "reading": document.querySelector('[data-read]'),
 };
-const btnSubmit = document.querySelector('[data-submit]');
-const cardContainer = document.querySelector('[data-card]');
-// btnSubmit.addEventListener('submit' ,(e) => {
-//   e.preventDefault()
-//   addBookToLibrery()
-// })
+const form = document.querySelector('[data-form]');
+export const cardContainer = document.querySelector('[data-card]');
+// console.log(cardContainer);
 
-function ConstructorBook(name, author, img, pages, read, id) {
-  this.id = id;
-  this.name = name;
-  this.author = author;
-  this.image_book = img;
-  this.number_pages = pages;
-  this.state_book = read;
-}
-const librery = [
-  {
-    "id": 0,
-    "name": "Cien años de soledad",
-    "author": "Gabriel Garcia Marquez",
-    "image_book": "",
-    "number_pages": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTddccIaADdko_XE0-T9H2Wloy5bugv_dQIag&s",
-    "state_book": true
-  }
-];
+
 const addBookToLibrery = () => {
   let id = Math.floor(Math.random() * 100000000);
   let { name, author, img, pages, reading } = inputs;
@@ -40,10 +24,16 @@ const addBookToLibrery = () => {
     pages.value, 
     reading.value, 
     id)
-  librery.push(newBook)
+    librery.push(newBook)
+    console.log(librery);
 }
 
-// const printBook = () => {
-// }
-
-// console.log(ConstructorBook);
+form.addEventListener('submit' ,(e) => {
+  e.preventDefault()
+  addBookToLibrery()
+  updateData()
+})
+const updateData = () => {
+  printCard()
+}
+updateData()
