@@ -22,6 +22,14 @@ export const librery = [
     "image_book": "https://images.cdn3.buscalibre.com/fit-in/360x360/ab/78/ab78d417e66dd83fb87e51e7c87a0163.jpg",
     "number_pages": 176,
     "state_book": true
+  },
+  {
+    "id": 3,
+    "name": "IT",
+    "author": "Stephen King",
+    "image_book": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjmk_1sRPPz8rWQLQNTBU3wEvoDd7PdREWA&s",
+    "number_pages": 1507,
+    "state_book": false
   }
 ];
 

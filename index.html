@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <link rel="shortcut icon" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fcurricular.dev%2Fassets%2Fimages%2Fplatforms%2Fodin_project.png" type="image/x-icon">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
           <h2>Library</h2>
         </div>
         <div class="btnModalActive">
-          <button type="button" class="btn"><i class="fa-solid fa-plus"></i> Add book</button>
+          <button type="button" class="btn" data-open><i class="fa-solid fa-plus"></i> Add book</button>
         </div>
       </nav>
     </header>
@@ -31,32 +32,36 @@
         <h1>All Books</h1>
         <p>Tags</p>
         <div class="tags">
-          <button type="button" class="active">All</button>
-          <button type="button">unread</button>
-          <button type="button">read on</button>
+          <button type="button" class="active" data-tags>All</button>
+          <button type="button" data-tags>Unread</button>
+          <button type="button" data-tags>Read on</button>
         </div>
       </div>
       <div class="container-card" data-card></div>
     </main>
+    <footer>Developed by WilDev</footer>
+  </div>
+  <div class="overlay" data-modal>
     <div class="modal">
+      <h2>Complete from new book</h2>
       <form action="" data-form>
-        <!-- <div class="camposDeTexto">
+        <div class="camposDeTexto">
           <label for="name">Name*</label>
-          <input type="text" name="name" class="inputs" placeholder="50 años de soledad..." data-name>
+          <input type="text" name="name" class="inputs" placeholder="50 años de soledad..." data-name required>
         </div>
         <div class="camposDeTexto">
           <label for="">Author*</label>
-          <input type="text" name="author" class="inputs" placeholder="Gabriel Garcia Marquez..." data-author>
+          <input type="text" name="author" class="inputs" placeholder="Gabriel Garcia Marquez..." data-author required>
         </div>
         <div class="camposDeTexto">
           <label for="img">Book cover*</label>
           <input type="text" name="img" class="inputs" placeholder="https://www.portada_cien_anos_de_soledad_0..."
-            data-img>
+            data-img required>
         </div>
         <div class="camposDeTexto">
           <label for="pages-number">Number of pages*</label>
           <input type="number" name="pages-number" class="inputs" placeholder="How many pages does the book have?"
-            data-pages>
+            data-pages required>
         </div>
         <div class="camposDeTexto">
           <label for="reading">Reading</label>
@@ -64,11 +69,10 @@
         </div>
         <div class="botones">
           <button type="submit" class="btnSubmit">Submit</button>
-          <button type="button" class="btn">Cancelar</button>
-        </div> -->
+          <button type="button" class="btn" data-close>Cancelar</button>
+        </div>
       </form>
     </div>
-    <footer>Developed by WilDev</footer>
   </div>
   <script type="module" src="./main.js"></script>
   <script src="https://kit.fontawesome.com/bc3dfab8e3.js" crossorigin="anonymous"></script>
